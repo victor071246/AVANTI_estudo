@@ -6,8 +6,33 @@
         <title>Tags</title>
     </head>
     <body>
-        <header>escopo do header</header>
-        <nav>escopo do nav</nav>
+        <header id="topo">escopo do header</header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Roupas</a>
+                    <ul>
+                        <li>
+                            <a href="#">Camisa</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Algodão</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Calça</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Acessórios</a>
+                </li>
+                <li>
+                    <a href="#">Outlet</a>
+                </li>
+            </ul>
+        </nav>
         <main>
             <!-- headings -->
             <article>
@@ -49,6 +74,58 @@
                     alt="Imagem do qarto"
                     title="Imagem do quarto"
                 />
+            </article>
+
+            <!--videos-->
+            <article>
+                <video controls width="400">
+                    <source src="assets/images/videos/Sequência 01.mp4" />
+                </video>
+            </article>
+
+            <!--vídeo do youtube-->
+            <article>
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/8VCYyCWQG4U?si=0iAn3fVJ6vRscBzG"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
+            </article>
+
+            <!--links-->
+            <article>
+                <a href="0_intro.html">Link relativo</a><br />
+
+                <a href="https://www.penseavanti.com.br" target="_blank"
+                    >Link Absoluto</a
+                >
+                <br />
+                <a href="#topo">Link âncora</a>
+                <br />
+                <a href="mailto:luciano.perereira@penseavanti.com.br"></a>
+            </article>
+
+            <!--fluxo de texto-->
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ratione rem libero quos similique labore possimus,<br />
+                    error enim dolor consectetur laboriosam placeat quae. Aut
+                    officia a deserunt recusandae, sit fuga omnis?
+                </p>
+
+                <p>
+                    <a href="">Lorem, ipsum dolor sit amet</a> consectetur
+                    adipisicing elit. Unde hic tempora cumque temporibus
+                    accusantium! Aperiam ullam commodi quam doloremque tenetur
+                    dolor, tempore odit repellendus impedit? Deserunt
+                    voluptatibus magni nemo. Earum?
+                </p>
             </article>
         </main>
         <footer>escopo do footer</footer>

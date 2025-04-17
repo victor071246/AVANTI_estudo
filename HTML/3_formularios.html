@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formularios em HTML</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <form name="cadastro" method="post" action="cadastro.php">
+                    <fieldset>
+                        <legend>Dados Pessoais:</legend>
+
+                        <div id="nome">
+                            <label for="name">Nome:</label>
+                            <input
+                                type="text"
+                                placeholder="Seu Nome"
+                                required="required"
+                            />
+                        </div>
+
+                        <div id="email">
+                            <label for="cp-email">Email:</label>
+                            <input
+                                type="email"
+                                placeholder="Seu email: "
+                                required="required"
+                                id="cp-email"
+                            />
+                        </div>
+
+                        <div id="genero">
+                            <label>Gênero</label>
+                            <input
+                                type="radio"
+                                value="masculino"
+                                name="genero"
+                            /><span>Masculino</span>
+                            <input
+                                type="radio"
+                                value="feminino"
+                                name="genero"
+                            />
+                            <span>Feminino</span>
+                            <input
+                                type="radio"
+                                name="genero"
+                                value="outro"
+                                name="genero"
+                            /><span>Outro</span>
+                        </div>
+
+                        <div id="interesse">
+                            <label>Área de Interesse:</label>
+                            <input
+                                type="checkbox"
+                                name="interesse"
+                                value="TI"
+                            /><span>Tecnologia da Informação</span>
+                            <input
+                                type="checkbox"
+                                name="interesse"
+                                value="comercial"
+                            />
+                            <span>Comercial</span>
+                            <input
+                                type="checkbox"
+                                name="interesse"
+                                value="financeiro"
+                            />
+                            <span>Financeiro</span>
+                        </div>
+                    </fieldset>
+
+                    <input type="submit" value="Cadastrar" />
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
