@@ -4,12 +4,18 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Formularios em HTML</title>
+        <style>
+            label {
+                margin: 10px 0;
+                display: inline-block;
+            }
+        </style>
     </head>
     <body>
         <main>
             <section>
                 <form name="cadastro" method="post" action="cadastro.php">
-                    <fieldset>
+                    <fieldset id="dados-pessoais">
                         <legend>Dados Pessoais:</legend>
 
                         <div id="nome">
@@ -28,6 +34,15 @@
                                 placeholder="Seu email: "
                                 required="required"
                                 id="cp-email"
+                            />
+                        </div>
+                        <div id="whatsapp">
+                            <label>Whatsapp:</label>
+                            <input
+                                type="tel"
+                                placeholder="99-99999-9999"
+                                required="required"
+                                pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
                             />
                         </div>
 
@@ -71,6 +86,74 @@
                                 value="financeiro"
                             />
                             <span>Financeiro</span>
+                        </div>
+
+                        <div id="cidade">
+                            <label for="cp-cidade">Cidade:</label>
+                            <input
+                                type="text"
+                                placeholder="Cidade:"
+                                required="required"
+                            />
+                        </div>
+                        <div id="estado">
+                            <label>Estado:</label>
+                            <select name="uf">
+                                <option value="Santa Catarina">SC</option>
+                                <option value="São Paulo">SP</option>
+                                <option value="Goiás">GO</option>
+                                <option value="Rio de Janeiro">RJ</option>
+                            </select>
+                        </div>
+                        <div id="observacoes">
+                            <label>Observações:</label>
+                            <textarea rows="5"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="dados-pessoa-juridica">
+                        <legend>Dados de Pessoa Jurídica</legend>
+
+                        <div id="razao-social">
+                            <label for="razaosocial">Razão Social</label>
+                            <input
+                                type="text"
+                                id="razaosocial"
+                                required="required"
+                                placeholder="Razão Social"
+                            />
+                        </div>
+
+                        <div id="nome-fantasia">
+                            <label for="nomefantasia">Nome Fantasia</label>
+                            <input
+                                type="text"
+                                id="nomefantasia"
+                                required="required"
+                                placeholder="Nome Fantasia"
+                            />
+                        </div>
+                        <div id="cnpj">
+                            <label for="cp-cnpj">CPNJ:</label>
+                            <input
+                                type="text"
+                                id="cp-cnpj"
+                                required="required"
+                                placeholder="CNPJ"
+                            />
+                        </div>
+
+                        <div id="ie">
+                            <label for="cp-cnpj">Inscrição Estadual</label>
+                            <input
+                                type="text"
+                                id="cp-ie"
+                                required="required"
+                                placeholder="Inscrição Estadual"
+                            />
+                            <span></span>
+                            <input type="checkbox" value="isento-ie" />Isento de
+                            Inscrição Estadual
                         </div>
                     </fieldset>
 
