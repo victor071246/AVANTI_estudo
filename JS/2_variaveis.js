@@ -16,7 +16,11 @@ const usuario = {
     idade: 42,
 };
 
-console.log(usuario.idade);
+const vazio = null;
+
+console.log(typeof usuario);
+
+// console.log(usuario.idade);
 
 // console.log('frutas', frutas[0]);
 
